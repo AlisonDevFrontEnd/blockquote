@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: lightblue;
+  margin: 0;
+}
+
+.blockquote {
+  max-width: 600px;
+  margin: 10px 30px;
+  padding: 25px;
+  background-color: skyblue;
+  border: 1px solid royalblue;
+}
+
+.blockquote__text {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
+}
+
+.blockquote--bordered {
+  border-left-width: 10px;
+}
+
+.blockquote--quoted::before {
+  content: "\201c";
+  font-size: 100px;
+  color: royalblue;
+  display: block;
+  margin-bottom: -40px;
+  margin-top: -20px;
+}
+
+.blockquote__text--credit {
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote__text:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.blockquote__text--credit::before {
+  content: "\2014\0020";
+}
