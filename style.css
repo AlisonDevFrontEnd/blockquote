@@ -55,3 +55,7 @@ body {
 .blockquote__text--credit::before {
   content: "\2014\0020";
 }
+
+.blockquote__text::after {
+  content: close-quote;
+}
